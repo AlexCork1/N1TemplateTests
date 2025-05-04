@@ -10,7 +10,7 @@ assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
 def hash_answer(value):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
 
-from code import square, is_even
+from student_code import square, is_even
 
 # Prepare grading dictionary
 results = {
