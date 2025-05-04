@@ -3,8 +3,8 @@ import os
 import json
 import hashlib
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'odgovori.json'))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__))))
+file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'odgovori.json'))
 assert os.path.exists(file_path), "Manjka datoteka odgovori.json"
 
 def hash_answer(value):
